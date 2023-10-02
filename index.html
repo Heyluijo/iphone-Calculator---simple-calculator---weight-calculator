@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://file.myfontastic.com/jvk4emttSvCKPSaf9LmGjc/icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Pagina</title>
+</head>
+<body> 
+
+    <!– Programa  1 –>
+    <i class="fa-light fa-signal fa-beat"></i>
+                <div class="row justify-content-center ">
+                    <div class="cajaDeCalculo  col-4  d-flex ">
+                        <form id="formulario">
+                                <h4 class="lb ">Coloca un numero</h4>
+                                <input type="number" id="n1" class="form-control" placeholder="Coloque un numero">
+                                <h4 class="lb">Coloca segundo numero</h4>
+                                <input type="number" id="n2" class="form-control" placeholder="Coloque un numero">
+                                <br>
+                                <div id="respuesta"></div>
+                                <br>
+                                <button type="button" id="sumar" onclick="hacerSuma();" class=" btn btn-success mt-3">Calcular</button>
+                                <button type="button" onclick="limpiar();" class=" btn btn-danger mt-3">Limpiar</button>
+                            </div>
+                        </div>
+<br>
+
+    <!– Programa 2 –>
+                                <div class="formPeso col-4  container">
+                                    <form  id="formPeso">
+                                                <div class="container flex-column justify-content-center " >
+                                                    <h5 class="text-center">Coloque el peso en libra y seleccione la conversion</h5>
+                                                    <input type="number" id="n3" class="form-control" placeholder="indica tu peso en libras"><br>
+                                                    <div id="resultPeso"></div>
+                                                    <br>
+                                                </div>
+                                                    <div class=" col-4 container d-flex justify-content-center" id="pesos">
+                                                    <input type="radio" id="toneladas" name="pesos" value="HTML">
+                                                    <label for="html">Toneladas</label><br>
+                                                    <input type="radio" id="kilogramos" name="pesos" value="CSS">
+                                                    <label for="css">Kilogramos</label><br>
+                                                    <input type="radio" id="gramos" name="pesos" value="JavaScript">
+                                                    <label for="javascript">Gramos</label> 
+                                                    <input type="radio" id="miligramos" name="pesos" value="JavaScript">
+                                                    <label for="javascript">Miligramos</label>
+                                                </div>
+                                                <br>
+                                                <button type="button" id="btnPeso" onclick="calPeso();" class=" btn btn-success">Calcular</button>
+                                                <button type="button" onclick="limpiar2();" class="btn btn-danger ">limpiar</button>
+                                    </form>
+                                </div>
+
+    <!- Calculadora ->     
+
+    <br>
+      <form class="container calculadoraStyle col-2" id="calculator" name="calculator">
+        
+          <div class="col-1  "><!-- clock widget start -->
+            <script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-sm2.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_25_303690080"><div style="width:200px; height:px; margin: 0 auto;"><a href="https://hotelmix.es/time/guibia-330093">Guibia</a><br/></div></div> <script type="text/javascript"> function setWidgetData_303690080(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_303690080 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=582;type=25;id=303690080;scode=64617;city_id=330093;wlangid=4;mode=1;details=0;background=ffffff;border_color=ffffff;color=ffffff;add_background=ffffff;add_color=333333;head_color=ffffff;border=1;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
+            <!-- clock widget end -->
+          </div>
+          <div class="col-7"></div>
+            <div class="col-3 container  d-flex icons">
+                <i class="icon-signal"></i>
+                <i class="icon-signal-1"></i>
+                <i class="icon-battery-3"></i>
+            </div> 
+          
+<!--ICONOS-->     <!--ICONOS-->   <!--ICONOS-->   <!--ICONOS-->   <!--ICONOS-->   <!--ICONOS-->   <!--ICONOS-->   
+            
+          
+
+ <!--Botones Arriba-->       
+              <input class="resCaladora p-3 lign-middle" type="textfield" name="ans" value="" autocomplete="off" readonly >
+                <div class="btnIzquierdo btnarriba row col-12 ">
+                  <div class="btnCalColor text-center">
+                    <input type="reset"id="c" value="c" >
+                  </div>
+                  <div class="btnCalColor text-center">
+                    <input type="button"id="+/-" value="+/-">
+                  </div>
+                  <div class="btnCalColor  text-center">
+                    <input type="button"id="b%" value="%" onclick="document.calculator.ans.value+='%'">
+                  </div>
+                  <div class="btnCalColor text-center btnPorcent">
+                    <input type="button"id="b÷" value="÷" onclick="document.calculator.ans.value+='/'">
+                  </div>
+                </div>
+            <!--Botones izquierdos-->
+                      <div class="btnIzquierdo row col-9 ">
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b9" value="9" onclick="document.calculator.ans.value+='9'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b8" value="8" onclick="document.calculator.ans.value+='8'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b7" value="7" onclick="document.calculator.ans.value+='7'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b6" value="6" onclick="document.calculator.ans.value+='6'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b5" value="5" onclick="document.calculator.ans.value+='5'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b4" value="4" onclick="document.calculator.ans.value+='4'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b3" value="3" onclick="document.calculator.ans.value+='3'">
+                        </div>
+                        <div class="btnCalColor  text-center">
+                          <input type="button"id="b2" value="2" onclick="document.calculator.ans.value+='2'">
+                        </div>
+                        <div class="btnCalColor text-center">
+                          <input type="button"id="b1" value="1" onclick="document.calculator.ans.value+='1'">
+                        </div>
+              </div>
+        <!--Botones derechos-->
+          <div class="btnDerecho col-3 ">
+                <div class="btnCalColor container text-center">
+                  <input type="button"id="bx" value="x" onclick="document.calculator.ans.value+='*'">
+                </div>
+                <div class="btnCalColor container text-center">
+                  <input type="button"id="bmenos" value="-" onclick="document.calculator.ans.value+='-'">
+                </div>
+                <div class="btnCalColor container text-center">
+                  <input type="button"id="bmas" value="+" onclick="document.calculator.ans.value+='+'">
+                </div>
+          </div>
+
+        <!--Botones Abajo-->
+          <div class="btnIzquierdo row col-12 ">
+            <div class="btnCalColor btn0 text-center">
+              <input type="button"id="b0" value="0" onclick="document.calculator.ans.value+='0'">
+            </div>
+            <div class="btnCalColor  text-center">
+              <input type="button"id="b." value="." onclick="document.calculator.ans.value+='.'">
+            </div>
+            <div class="btnCalColor  text-center">
+              <input type="button"id="bigual" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+            </div>
+          </div>
+
+        </form>
+<br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"> </script>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/src/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cajaDeCalculo{
+    padding: 2em 2em;
+    border-radius: 20px;
+    margin-top: 2em;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/src/bgform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 20em; 
+}
+
+.lb{
+    color: white;
+}
+
+#respuesta{
+    background-color: white;
+}
+
+
+#pesos input{
+    margin-left: 2em;
+    flex:content;
+
+}
+
+.formPeso{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/src/Peso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 2em 2em;
+    border-radius: 0 0 20px 20px;
+    color: white;
+}
+
+.calculadoraStyle{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.btnIzquierdo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0.2rem;
+}
+
+.calculadoraStyle .btnDerecho .btnCalColor{
+      
+background-color: #ff9f0a;
+}
+
+
+.btnDerecho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0.2rem;
+}
+
+.btnCalColor{
+    padding: 4% 0%;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+    border-radius: 50%;
+    background-color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.btn0{
+    height: 4rem;
+    width: 8rem;
+    border-radius: 50px;
+}
+
+.btnarriba .btnCalColor{
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.btnarriba .btnPorcent{
+    background-color: #ff9f0a;
+    color:white;
+}
+
+.icons {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+.icons i {
+    margin: 0.1em;
+}
+
+#calculator input{
+background:none;
+border:none ;
+border-radius: 50%;
+height:100%;
+width: 100%;
+}
+
+.btnIzquierdo input{
+    color: white;
+    font-size: x-large;
+}
+
+.resCaladora{
+    text-align: end;
+    margin:  1rem auto;
+    height: 5rem;
+    width: 100%;
+    color: aliceblue;
+    font-size: 3rem;
+
+}
+.btnDerecho input{
+    color: white;
+}
