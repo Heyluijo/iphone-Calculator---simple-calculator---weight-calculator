@@ -60,9 +60,3 @@ function limpiar2(){
     resultado.innerHTML="";
 }
 
-
-
-/* Calculadora*/
-
-let btnPeso = document.getElementById('btnPeso');
- let resCaladora = document.getElementById('resCaladora');
